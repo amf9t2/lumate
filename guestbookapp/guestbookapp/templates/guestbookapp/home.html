@@ -1,0 +1,8 @@
+{% extends "guestbookapp/base.html" %}
+{% block content %}
+<ul>
+    {% for guest in guests %}
+    <li style="color:{% cycle 'blue' 'green' %}">{{ line.txt }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
