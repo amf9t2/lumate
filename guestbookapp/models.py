@@ -14,11 +14,9 @@ class guests(models.Model):
 def __str__(self):
 
         return ' '.join([
-            self.guest_id,
             self.last_name,
             self.first_name,
             self.ip_address,
-            self.entry_date,
             self.o_s,
             self.device
         ])
