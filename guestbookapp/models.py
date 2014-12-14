@@ -11,6 +11,9 @@ class guests(models.Model):
     o_s = models.CharField(max_length=50, editable=False, serialize=True, null=True)
     device = models.CharField(max_length=50, editable=False, serialize=True, null=True)
 
+def __unicode__(self):
+        return self.last_name
+
 def __str__(self):
 
         return ' '.join([
